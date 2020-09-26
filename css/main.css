@@ -1,0 +1,1053 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+/*Default*/
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-family: Georgia, "Times New Roman", Serif;
+  font-size: 14px;
+  line-height: 20px;
+  }
+img {
+  display: block;
+  max-width: 100%;
+}
+.btn {
+  border: 3px solid #fec63e;
+  padding: 10px 30px;
+  color: #fec63e;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: transparent;
+}
+.subtitulo{
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: .1em;
+  line-height: 30px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.subtitulo:after, .subtitulo:before{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #000000;
+  margin: 0 auto;
+  margin: 15px auto 15px auto;
+}
+.subtitulo-interno{
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: .1em;
+  line-height: 30px;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.subtitulo-interno:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #000000;
+  margin: 0 auto;
+  margin: 8px 0;
+}
+.btn:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.btn.btn-preto:hover{
+  color: #000000;
+  border-color: #000000;
+}
+.call {
+  padding-top: 40px;
+  clear: both;
+  text-align: center;
+}
+.call p{
+  margin-bottom: 20px ;
+}
+/*Header*/
+.header{
+  z-index: 10;
+  width: 100%;
+  background-color: #fec63e;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+}
+.header_menu {
+  text-align: right;
+  margin-top: 20px;
+}
+.header_menu ul li a.menu_ativo{
+  color: #ffffff;
+}
+.header ul li{
+  display: inline-block;
+  margin-left: 25px;
+}
+.header ul li a {
+  color: #000;
+  font-weigth: bold;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 14px;
+  padding: 10px 0;
+}
+.header ul li a:hover{
+  color: #ffffff;
+}
+
+/*Section introdution-sobre*/
+.introdution-interna{
+  width: 100%;
+  height: 160px;
+  background: url("../img/bg-sobre.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 92px;
+  text-align: center;
+}
+.introdution-interna h1 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.introdution-interna p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  margin: 15px 0px 0px 0px;
+}
+.introdution-interna h1:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+/*Section introdução*/
+.introdution{
+  width: 100%;
+  height: 380px;
+  background: url("../img/bg.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 92px;
+  text-align: center;
+  padding-top: 80px;
+}
+.introdution h1 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.quote-externo{
+  max-width: 320px;
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.quote-externo p{
+  font-style: italic;
+}
+.quote-externo p:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin: 15px auto 15px auto;
+}
+.quote-externo cite{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+/*Produtos*/
+.produtos{
+  padding: 60px 0;
+}
+.produtos .subtitulo:before{
+  background-color: #000000;
+}
+.produtos_lista li{
+  background: #fec63e;
+  text-align: center;
+}
+.produtos_lista li h3{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-top: 20px;
+}
+.produtos_lista li p {
+  padding: 10px 20px 20px 20px;
+}
+.produtos_lista li h3:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #000000;
+  margin: 0 auto;
+  margin: 2px auto 15px auto;
+}
+.produtos_lista_icone{
+  background: #000000;
+  padding: 20px;
+}
+.produtos_lista_icone img{
+  margin:0 auto;
+}
+/*Portfolio*/
+.portfolio {
+  width: 100%;
+  background-color: #000000;
+  padding: 40px 0;
+}
+.portfolio .subtitulo{
+  color: #fec63e;
+}
+.portfolio .subtitulo:after{
+  background-color: #fec63e;
+}
+.portfolio-lista li:last-child{
+  margin-top: 20px;
+}
+.portfolio-lista ul li{
+  margin: 0 20px;
+}
+.portfolio .call p{
+  color: #ffffff;
+}
+/*Qualidade*/
+.qualidade {
+  padding: 60px 0;
+}
+.qualidade:after{
+  content: "";
+  width: 634px;
+  height: 83px;
+  display: block;
+  background: url("../img/linhas.svg") no-repeat center;
+  position: absolute;
+  top: 220px;
+  right:162px;
+  z-index: -1;
+}
+.qualidade .subtitulo:before{
+  background-color: #000000;
+}
+.qualidade img{
+  margin: 0 auto ;
+}
+.qualidade li{
+  text-align: center;
+  padding: 0 20px;
+}
+.qualidade_lista{
+  padding-top: 20px;
+  overflow: auto;
+}
+.qualidade_lista li h3{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-top: 20px;
+}
+.qualidade_lista li h3:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #000000;
+  margin: 0 auto;
+  margin: 2px auto 15px auto;
+}
+.quebra{
+  width: 100%;
+  height: 220px;
+  background: url("../img/bg-footer.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+.quebra .quote-externo{
+  padding: 40px;
+}
+.quebra blockquote p{
+  color: #ffffff;
+}
+.footer{
+  width: 100%;
+  background: #000;
+  color: #ffffff;
+  padding: 20px 0;
+}
+.footer h3{
+  font-size: 18px;
+  line-height: 25px;
+  color: #fec63e;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+}
+.footer h3:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fec63e;
+  margin:6px 0 12px 0;
+}
+.footer_historia{
+  padding-right: 40px;
+}
+.footer_contato ul li{
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Georgia, "Times New Roman", Serif;
+}
+.footer_redes ul li {
+  display: inline-block;
+}
+.footer_redes ul li a {
+  border: 3px solid #fec63e;
+  display: block;
+  padding: 10px;
+}
+.footer_redes ul li a:hover{
+  border-color: #ffffff;
+}
+.copy {
+  width: 100%;
+  background: #fec63e;
+  padding: 20px 0;
+}
+/*Sobre*/
+.missao-sobre{
+  padding-top: 60px;
+}
+.missao-sobre p{
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 1em;
+  padding-right: 40px;
+}
+.missao-sobre ul li {
+  font-family: Georgia, "Times New Roman", Serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+.missao-sobre img{
+  padding-top: 20px;
+}
+/*Produtos*/
+.produtos-interna{
+  width: 100%;
+  height: 160px;
+  background: url("../img/bg-produtos.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 92px;
+  text-align: center;
+}
+.produtos-interna h1 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.produtos-interna p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  margin: 15px 0px 0px 0px;
+}
+.produtos-interna h1:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+.produtos-item{
+  padding-top: 60px;
+}
+.produtos-item h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+  position: relative;
+  top: -170px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: -56px;
+}
+.produtos-info{
+  background: #000000;
+}
+.produtos-info p{
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 25px;
+  padding: 30px 40px;
+  height: 182px;
+}
+.produtos-info ul li {
+  background: #fec63e;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 20px;
+  float: left;
+  text-align: center;
+  width: 229px;
+  height: 48px;
+  padding-top: 15px;
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+.produtos-info ul li:nth-child(even){
+  margin-left: 2px;
+}
+.produtos-item h2:after, h2:before{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin: 6px auto 10px auto;
+}
+.produtos_icone{
+  background: #000000;
+  padding: 20px;
+}
+.produtos_icone img{
+  margin: 0 auto;
+}
+.orcamento{
+  background: #000000;
+  color: #ffffff;
+  width: 100%;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+.orcamento .subtitulo{
+  color: #fec63e;
+}
+.orcamento .subtitulo:after, .subtitulo:before{
+  background: #fec63e;
+}
+.form {
+  padding-right: 60px;
+}
+.form label{
+  display: block;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Serif;
+  line-height: 25px;
+}
+.form input, textarea {
+  display: block;
+  width: 100%;
+  border: 4px solid #fec63e;
+  padding: 7px 10px;
+  background: none;
+  color: #ffffff;
+  outline: none ;
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Serif;
+  margin-bottom: 10px;
+}
+.form input:hover, textarea:hover{
+  border: 4px solid #ffffff;
+}
+.form button{
+  margin-top: 15px;
+  background: none;
+}
+.orcamento_dados{
+  font-family: Georgia, "Times New Roman", Serif;
+  display: block;
+  font-size: 18px;
+}
+.orcamento_dados span{
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Serif;
+  line-height: 25px;
+  display: block;
+  line-height: 25px;
+}
+.orcamento_email{
+  margin-bottom: 20px;
+}
+.orcamento_dados p{
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Serif;
+  line-height: 25px;
+  display: block;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.orcamento_dados h3{
+  margin-bottom: 10px;
+  line-height: 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fec63e;
+}
+.orcamento_dados ul{
+  padding-right: 60px;
+}
+.orcamento_dados ul li{
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Serif;
+  padding: 10px 15px;
+}
+.striped li:nth-child(odd){
+  background: #1d1d1d;
+  width: 100%;
+}
+/*Portfólio*/
+.portfolio-interna{
+  width: 100%;
+  height: 160px;
+  background: url("../img/bg-portfolio.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 92px;
+  text-align: center;
+}
+.portfolio-interna h1 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.portfolio-interna p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  margin: 15px 0px 0px 0px;
+}
+.portfolio-interna h1:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+.faixa .quote-externo, .quote-externo p{
+  color: #ffffff;
+}
+.faixa{
+  background: #ffffff;
+  clear: both;
+}
+.quote-cliente{
+  padding: 60px 0;
+  max-width: 450px;
+  margin: 0 auto;
+}
+.quote-cliente p{
+  text-align: center;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Serif;
+  font-style: italic;
+}
+.quote-cliente cite{
+  font-weight: bold;
+  float: right;
+  font-style: normal;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Serif;
+}
+/*Contato*/
+.contato-interna{
+  width: 100%;
+  height: 160px;
+  background: url("../img/bg-contato.jpg") no-repeat center;
+  background-size: cover;
+  margin-top: 92px;
+  text-align: center;
+}
+.contato-interna h1 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.contato-interna p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  margin: 15px 0px 0px 0px;
+}
+.contato-interna h1:after{
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+.contato{
+  padding: 40px 0;
+}
+.contato .subtitulo{
+  color: #fec63e;
+}
+.contato .subtitulo:after, .subtitulo:before{
+  background: #fec63e;
+}
+.form_contato {
+  padding-right: 60px;
+}
+.form_contato label{
+  display: block;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Serif;
+  line-height: 25px;
+}
+.form_contato input, textarea {
+  display: block;
+  width: 100%;
+  border: 4px solid #fec63e;
+  padding: 7px 10px;
+  background: none;
+  color: #000000;
+  outline: none ;
+  font-size: 14px;
+  font-family: Georgia, "Times New Roman", Serif;
+  margin-bottom: 10px;
+}
+.form input:hover, textarea:hover{
+  border: 4px solid #fec63e;
+}
+.form_contato button{
+  margin-top: 15px;
+  background: none;
+}
+.form_contato button:hover{
+  margin-top: 15px;
+  color: #fec63e;
+  border: 3px solid #000000;
+}
+.contato_dados span{
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Serif;
+  line-height: 25px;
+  display: block;
+  line-height: 25px;
+}
+.orcamento_email{
+  margin-bottom: 20px;
+}
+.contato_dados p{
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Serif;
+  line-height: 25px;
+  display: block;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.contato_dados a{
+  display: inline-block;
+  border: 3px solid #fec63e;
+  margin: 10px;
+  padding: 10px;
+}
+.contato_dados a:hover {
+  border: 3px solid #000000;
+}
+.contato_dados h3{
+  margin-bottom: 10px;
+  line-height: 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fec63e;
+}
+.contato_dados ul li{
+  display: inline;
+}
+.contato_dados ul li a {
+  border: 3px solid #fec63e;
+  padding: 10px;
+  margin-left: 0;
+}
+.endereco-foto{
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 800px){
+  .header{
+    position: relative;
+    padding-bottom: 0px;
+  }
+  .header img{
+    margin: 0 auto 10px auto;
+  }
+  .header_menu{
+    text-align: center;
+  }
+  .header_menu ul li{
+    margin: 5px;
+  }
+  .header_menu ul li a{
+    border: 4px solid #000000;
+    width: 136px;
+    display: block;
+    float: left;
+  }
+  .header_header ul li a:hover{
+    color: #ffffff;
+  }
+  .introdution {
+    margin-top:0px;
+    padding-top: 2px;
+    background: url("../img/bg-mobile.jpg") no-repeat center;
+    background-size: cover;
+  }
+  .qualidade:after, .qualidade img {
+    display: none;
+  }
+  .introdution-interna
+  {
+    margin-top:0;
+  }
+  .missao-sobre {
+    padding-top:10px;
+  }
+  .qualidade {
+    padding-top: 10px;
+  }
+  .call{
+    padding-top: 20px;
+  }
+  .produtos-interna{
+    margin-top: 0;
+  }
+  .produtos-item h2{
+    top: -116px;
+  }
+  .produtos-info p{
+    line-height: 18px;
+  }
+  .produtos-info ul li{
+    width: 100%;
+  }
+  .produtos-info ul li:nth-child(even){
+    margin-left: 0;
+  }
+  .form{
+    padding-right: 0;
+  }
+  .orcamento_dados ul{
+    padding-right: 0;
+  }
+  .copy{
+    padding: 15px 0;
+    text-align: center;
+  }
+  .portfolio-interna{
+    margin-top: 0;
+    padding: 10px;
+  }
+  .contato-interna{
+    margin-top: 0px;
+    padding: 20px;
+  }
+  .form_contato{
+    padding-right: 0;
+  }
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+
